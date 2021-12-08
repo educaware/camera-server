@@ -1,0 +1,122 @@
+<br />
+<p align="center">
+  <a href="https://github.com/rmenai/camera-socket">
+    <img src="https://cdn.worldvectorlogo.com/logos/fastapi-1.svg" alt="Logo" width="80" height="80">
+  </a>
+
+<h3 align="center">Camera Socket</h3>
+
+  <p align="center">
+    Awesome camera-socket created by rmenai
+    <br />
+    <a href="https://github.com/rmenai/camera-socket"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/rmenai/camera-socket">View Demo</a>
+    ·
+    <a href="https://github.com/rmenai/camera-socket/issues/new?assignees=&labels=&template=bug_report.md&title=">Report Bug</a>
+    ·
+    <a href="https://github.com/rmenai/camera-socket/issues/new?assignees=&labels=&template=feature_request.md&title=">Request Feature</a>
+  </p>
+
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+    </li>
+    <li>
+      <a href="#installation">Installation</a>
+      <ul>
+        <li><a href="#using-docker">Using Docker</a></li>
+        <li><a href="#for-development">For development</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#environment-variables">Environment Variables</a>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+  </ol>
+</details>
+
+
+
+<!-- ABOUT THE PROJECT -->
+
+## About The Project
+
+Awesome camera-socket created by rmenai.
+
+
+<!-- INSTALLATION -->
+
+## Installation
+
+The first step will be to clone the repo
+
+```shell
+git clone https://github.com/rmenai/camera-socket.git
+```
+
+### Using Docker
+
+Using Docker is generally recommended (but not strictly required) because it abstracts away some additional set up work.
+
+The requirements for Docker are:
+
+* [Docker CE](https://docs.docker.com/install/)
+* [Docker Compose](https://docs.docker.com/compose/install/)
+    * `pip install docker-compose`
+    * This is only a required step for linux. Docker comes bundled with docker-compose on Mac OS and Windows.
+
+### For development
+
+The requirements are:
+
+* [Python](https://www.python.org/downloads/) and [Poetry](https://python-poetry.org/docs/)
+
+1. Install the backend dependencies
+   ```shell
+   poetry install
+   ```
+
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file or in the
+docker-compose.yaml file.
+
+| Variable     | Description               | Default                                                |
+|--------------|---------------------------|--------------------------------------------------------|
+| PROJECT_NAME | The name of the API       | FastAPI                                                |
+| API_ENDPOINT | The endpoint of the API   | /api/v1                                                |
+| API_PORT     | The API port              | 8080                                                   |
+| POSTGRES_URI | The Postgres database URI | postgresql://postgres:changeme@localhost:5432/postgres |
+
+<!-- USAGE EXAMPLES -->
+
+## Usage
+
+Now you are done! You can run the project using docker-compose
+
+```shell
+docker-compose up
+```
+
+Or you can run the backend and frontend manually using
+
+```shell
+poetry run task start
+```
+
+## Contributing
+
+See [CONTRIBUTING.md](https://github.com/rmenai/camera-socket/blob/main/CONTRIBUTING.md) for ways to get started.
+
+<!-- LICENSE -->
+
+## License
+
+Distributed under the MIT License. See [LICENSE](https://github.com/rmenai/camera-socket/blob/main/LICENSE) for more information.
