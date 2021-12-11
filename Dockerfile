@@ -4,6 +4,9 @@ FROM python:3.9-slim
 ENV PIP_NO_CACHE_DIR=false \
     POETRY_VIRTUALENVS_CREATE=false
 
+# Install ffmpeg for streaming.
+RUN apt-get install -y ffmpeg
+
 # Install Poetry.
 RUN pip install --upgrade poetry
 

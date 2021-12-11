@@ -1,10 +1,10 @@
-from pydantic import BaseSettings, PostgresDsn
+from pydantic import BaseSettings
 
 
 class API(BaseSettings):
     """The API settings."""
 
-    name: str = "FastAPI"
+    name: str = "Camera Socket"
     endpoint: str = "/api/v1"
 
     host: str = "0.0.0.0"
@@ -21,8 +21,9 @@ class Global(BaseSettings):
     """The app settings."""
 
     api: API = API()
-    pg_dns: PostgresDsn = "postgresql://postgres:changeme@localhost:5432/postgres"
-    sqlite_dns: str = "sqlite:///db.sqlite3"
+
+    youtube_stream_key: str
+    stream_url: str = "rtmp://a.rtmp.youtube.com/live2"
 
     debug: bool = False
 
@@ -30,11 +31,6 @@ class Global(BaseSettings):
         """The Pydantic settings configuration."""
 
         env_file = ".env"
-        fields = {
-            "pg_dns": {
-                "env": "POSTGRES_URI"
-            }
-        }
 
 
 settings = Global()
