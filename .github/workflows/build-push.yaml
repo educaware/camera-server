@@ -76,7 +76,7 @@ jobs:
         uses: akhilerm/tag-push-action@v1.0.0
         with:
           src: ghcr.io/${{ github.repository }}:latest
-          dst: registry.heroku.com/${{ secrets.HEROKU_APP_NAME }}/worker
+          dst: registry.heroku.com/${{ secrets.HEROKU_APP_NAME }}/web
 
       - name: Authenticate to Heroku
         uses: akhileshns/heroku-deploy@v3.12.12
@@ -88,5 +88,5 @@ jobs:
 
       - name: Release to Heroku
         run: |
-          heroku container:push web -a ${{ secrets.HEROKU_APP_NAME }}
-          heroku container:release web -a ${{ secrets.HEROKU_APP_NAME }}
+          heroku container:login
+          heroku container:release -a ${{ secrets.HEROKU_APP_NAME }}
