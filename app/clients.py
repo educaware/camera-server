@@ -23,17 +23,18 @@ class Clients:
         for client in self._clients:
             yield client
 
-    def add_client(self, websocket: WebSocket):
-        """Add a session to `_sessions`"""
+    def add_client(self, websocket: WebSocket) -> Client:
+        """Add a session to `_sessions`."""
         client = Client(websocket)
 
         self._clients.append(client)
         return client
 
-    def remove(self, client: Client):
+    def remove(self, client: Client) -> None:
+        """Remove a client from `_clients`."""
         self._clients.remove(client)
 
-    def get(self, host: str, port: int):
+    def get(self, host: str, port: int) -> Client:
         """Get a specific session from its host and port."""
         for client in self:
             websocket = client.websocket
