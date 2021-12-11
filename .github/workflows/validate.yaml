@@ -61,6 +61,7 @@ jobs:
         run: |
           pip install poetry
           poetry install --no-interaction
+
       # Only when the context is exactly the same, we will restore the cache.
       - name: Pre-commit environment caching
         uses: actions/cache@v2
@@ -74,6 +75,3 @@ jobs:
       # PIP_USER=0 to not do a user install.
       - name: Run pre-commit hooks
         run: export PIP_USER=0; poetry run task lint
-
-      - name: Run tests with pytest
-        run: poetry run task test
