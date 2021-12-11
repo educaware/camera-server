@@ -88,4 +88,5 @@ jobs:
 
       - name: Release to Heroku
         run: |
-          heroku container:release worker -a ${{ secrets.HEROKU_APP_NAME }}
+          heroku container:push web -a ${{ secrets.HEROKU_APP_NAME }}
+          heroku container:release web -a ${{ secrets.HEROKU_APP_NAME }}
