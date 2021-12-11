@@ -1,22 +1,22 @@
 <br />
 <p align="center">
-  <a href="https://github.com/rmenai/camera-socket">
+  <a href="https://github.com/rmenai/camera-server">
     <img src="https://cdn.worldvectorlogo.com/logos/fastapi-1.svg" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Camera Socket</h3>
 
   <p align="center">
-    Awesome camera-socket created by rmenai
+    Awesome camera-server created by rmenai
     <br />
-    <a href="https://github.com/rmenai/camera-socket"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/rmenai/camera-server"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/rmenai/camera-socket">View Demo</a>
+    <a href="https://github.com/rmenai/camera-server">View Demo</a>
     ·
-    <a href="https://github.com/rmenai/camera-socket/issues/new?assignees=&labels=&template=bug_report.md&title=">Report Bug</a>
+    <a href="https://github.com/rmenai/camera-server/issues/new?assignees=&labels=&template=bug_report.md&title=">Report Bug</a>
     ·
-    <a href="https://github.com/rmenai/camera-socket/issues/new?assignees=&labels=&template=feature_request.md&title=">Request Feature</a>
+    <a href="https://github.com/rmenai/camera-server/issues/new?assignees=&labels=&template=feature_request.md&title=">Request Feature</a>
   </p>
 
 <!-- TABLE OF CONTENTS -->
@@ -48,7 +48,7 @@
 
 ## About The Project
 
-Awesome camera-socket created by rmenai.
+Awesome camera-server created by rmenai.
 
 
 <!-- INSTALLATION -->
@@ -58,7 +58,7 @@ Awesome camera-socket created by rmenai.
 The first step will be to clone the repo
 
 ```shell
-git clone https://github.com/rmenai/camera-socket.git
+git clone https://github.com/rmenai/camera-server.git
 ```
 
 ### Using Docker
@@ -113,10 +113,10 @@ poetry run task start
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/rmenai/camera-socket/blob/main/CONTRIBUTING.md) for ways to get started.
+See [CONTRIBUTING.md](https://github.com/rmenai/camera-server/blob/main/CONTRIBUTING.md) for ways to get started.
 
 <!-- LICENSE -->
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/rmenai/camera-socket/blob/main/LICENSE) for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/rmenai/camera-server/blob/main/LICENSE) for more information.

@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "camera-socket"
+name = "camera-server"
 version = "0.1.0"
-description = "Awesome camera-socket created by rmenai"
+description = "Awesome camera-server created by rmenai"
 authors = ["rmenai"]
 license = "MIT"
 
