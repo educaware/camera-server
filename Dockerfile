@@ -5,6 +5,7 @@ ENV PIP_NO_CACHE_DIR=false \
     POETRY_VIRTUALENVS_CREATE=false
 
 # Install ffmpeg for streaming.
+RUN apt-get -y update
 RUN apt-get install -y ffmpeg
 
 # Install Poetry.
