@@ -8,7 +8,7 @@ class API(BaseSettings):
     endpoint: str = "/api/v1"
 
     host: str = "0.0.0.0"
-    port: int = 8080
+    port: int = 80
 
     class Config:
         """The Pydantic settings configuration."""

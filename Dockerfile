@@ -24,3 +24,4 @@ COPY . .
 
 # Start the bot
 CMD ["task", "start"]
+EXPOSE 80
